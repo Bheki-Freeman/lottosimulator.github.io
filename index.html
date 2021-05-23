@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Simulater | V1.0.1</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <div class="container" id="container">
+       
+            
+       
+        <header class="header"><p class="play_button"><button class="btns" id="play"></button></p><div class="zombies text"><p id="zom_title">Zombies</p><p>👾</p><p class="zom_value">0</p></div></header>
+        <div class="grid"></div>
+    
+            <hr>
+
+            
+            <div class="container cont">
+                <button class="btns" id="collect">Collect</button>
+                <p class="jack_pot_display text">
+                    <small class="jack_pot">JACKPOT</small>
+                    <label for="jac_pot" class="jacpot_points">100 pts </label>
+                </p>
+                
+                <p class="progress text" id="progress">Stats</p>
+            </div>
+        
+        </div>
+    </div>
+        <div class="gameover text">
+            <h1>Game Over</h1>
+            <hr>
+            <center><p class="win_or_loose">Winner!</p></center>
+            <hr>
+            <label for="points">Points : <span id="points">0</span></label>
+            <label for="total_games">Total Games : <span id="total_games">0</span></label>
+            <button class="play_again btns" id="new_game">Play again</button>
+        </div>
+    <script src="src/wins.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>

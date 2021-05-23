@@ -1,0 +1,203 @@
+body{display: flex; justify-content: center; align-items: center;
+    background-color: rgba(157, 255, 255, 0.924);
+      background-size: 100% 100vh; background-repeat: no-repeat;}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    justify-content: space-around;
+    gap: 10px;   
+    border: 1px solid rgba(0, 7, 22, 0.486);
+    border-radius: 10px;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.63); */
+    background: linear-gradient(rgba(4, 10, 39, 0.5), rgba(9, 30, 122, 0.637)), url("../src/img/back2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+    
+}
+
+
+.play_button{
+    background-color: rgba(0, 7, 22, 0.705);
+    width: 50%;
+    height:0vw;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+.zombies{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly; 
+    border: none;
+    background-color: rgba(0, 7, 22, 0.705) ;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.zom_value{
+    transition: .3s ease-in-out;
+}
+.danger_text{
+    color: red;
+    transform: scale(1.9);
+}
+.container:hover{
+    transform: scale(.997);
+}
+.spins{
+    background-color: orange;
+    background: url('../src/img/spins.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 10px 2px rgb(0, 4, 58);
+}
+
+.gold_ring{
+    background: url('../src/img/Gold Ring.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.red_rose{
+    background: url('../src/img/Red Rose.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.pink{
+    background: url('../src/img/pnk.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.square{
+    width: 90px;
+    height: 90px;
+    border: 0.5px dotted white;
+    border-radius: 50%;
+    transition: .1s ease-in-out;
+}
+.square.spins{
+    border: none;
+}
+
+.win_or_loose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color : orange;
+}
+.win{
+    color : green;
+}
+.loose{
+    color : red;
+}
+
+hr{
+    width: 100%;
+    border : 3px groove aquamarine;
+    border-radius: 2px;
+}
+
+.grid{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 48, 56, 0.472);
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+}
+.cont{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(87, 177, 147);
+    width: 100px;
+    height: 40px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: .2s ease-in-out;
+}
+
+.btns:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(3, 105, 71);
+}
+#play{
+    background: url("../src/img/play1.gif") ;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+.gameover{
+    display: none;
+    flex-direction: column; 
+    margin-top: 5px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.same{
+    border: 2px solid green;
+}
+.jack_pot{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text{
+    color: white;
+}
+.progress{    
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.jack_pot_display{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: .3s ease-in-out;
+}
+.jack_pot_display:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.jacpot_points{
+    color: red;
+    font-weight: bolder;
+}
